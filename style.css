@@ -1,0 +1,353 @@
+:root {
+  --clr-accent-300: rgb(177, 215, 180);
+
+  --clr-primary-900: rgb(127, 183, 126);
+
+  --clr-neutral-300: rgb(234, 227, 210);
+  --clr-neutral-200: rgb(247, 246, 220);
+  --clr-neutral-100: white ;
+  --clr-neutral-900: black;
+
+  --ff-primary: "Baloo 2", sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --ff-regular: 400;
+  --ff-semi-bold: 500;
+  --ff-bold: 700;
+
+  --fs-300: .8125rem;
+  --fs-400: .875rem;
+  --fs-500: 1.3em;
+  --fs-600: 1.875rem;
+}
+
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+
+* {
+  font: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  font-family: var(--ff-primary);
+  background-color: var(--clr-neutral-300);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+
+body {
+  
+  overflow: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul [role="list"],ul, li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px black;
+  height: 100px;
+  margin-bottom: 2px;
+
+}
+
+.promo {
+  width: 100%;
+  height: 20%;
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-200);
+  text-align: center;
+  padding: 2px 0 5px 0;
+  box-shadow: 0 0 25 white;
+  display: flex;
+  justify-content: center;
+}
+
+.promo > a > span{
+  color: var(--clr-neutral-100);
+}
+
+nav, nav ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--clr-primary-900);
+  color: var(--clr-neutral-300);
+  align-items: center;
+  margin-bottom: 0;
+  
+}
+
+ul, li, #navList {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.navButtons2 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+nav {
+  
+  padding: 0;
+}
+
+.navButtons {
+  color:  var(--clr-neutral-200);
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  display: flex;
+}
+
+#catLogo {
+  max-width: 215px;
+  height: 100%;
+  border-radius: 10px;
+
+}
+
+.container.Hook {
+  background-color: var(--clr-neutral-100);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 50%;
+  background-image: url('cafe3.jpg');
+  background-size: cover;
+  background-position: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: inset 0 0 0 1000px rgba(95, 99, 98, 0.589);
+  min-height: 630px;
+  margin-top: 5px;
+}
+
+.container.Hook >p {
+  font-size: 3rem;
+  color: var(--clr-neutral-100);
+  text-align: center;
+  
+}
+
+.locationButton {
+  width: 10%;
+  height: 40px;
+  color: var(--clr-neutral-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-accent-300);
+  border-radius: .5rem;
+  box-shadow: 0 2px 2px black;
+  font-size: var(--fs-500);
+}
+
+.why {
+  min-height: 400px;
+  background: var(--clr-neutral-100);
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 5px black;
+}
+
+.why1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.why1 span {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-600);
+  font-weight: var(--ff-bold);
+  box-shadow: 2px 1px 25px var(--clr-neutral-300);
+ 
+  
+}
+
+.why2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 3px solid var(--clr-accent-300);
+  padding: 2rem;
+}
+
+.faves {
+  min-height: 923px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.faves h3 {
+  font-size: 3.5rem;
+  color: black;
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.foodSection {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 62%;
+  height: 800px;
+  background-color: var(--clr-accent-300);
+  padding: 0 30rem 0 30rem;
+
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  width: 17rem;
+  height: 24rem;
+  overflow: hidden;
+  box-shadow: 0 0 20px black;
+  
+}
+
+.food img {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.businessInfo {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  padding-left: .5rem;
+  justify-content: flex-end;
+}
+
+#footerMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+#footerMain section {
+  width: 33%;
+}
+
+footer section + section {
+  padding-left: .5rem;
+}
+
+#midSecMain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+#midSecMain span {
+  padding-bottom: 1.5rem;
+}
+
+.midSec {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  min-width: 100%;
+  height: 100%;
+}
+
+.midSec section {
+  width: 33%;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.links, .links >a {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-right: .5rem;
+  justify-content: flex-end;
+}
+
+.fa-brands {
+  width: 100%;
+  height: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 2700px){
+  .foodSection {
+    min-width: 1132px ;
+    max-width: 1132px;
+    overflow: hidden;
+  }
+}
+
+#catPort
