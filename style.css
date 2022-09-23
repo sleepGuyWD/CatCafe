@@ -2,6 +2,7 @@
   --clr-accent-300: rgb(177, 215, 180);
 
   --clr-primary-900: rgb(127, 183, 126);
+  --clr-primary-500: rgb(222, 176, 120);
 
   --clr-neutral-300: rgb(234, 227, 210);
   --clr-neutral-200: rgb(247, 246, 220);
@@ -104,6 +105,10 @@ nav, nav ul {
   
 }
 
+.navButtons:hover {
+  color: var(--clr-primary-500);
+}
+
 ul, li, #navList {
   height: 100%;
   margin: 0;
@@ -179,6 +184,18 @@ nav {
   border-radius: .5rem;
   box-shadow: 0 2px 2px black;
   font-size: var(--fs-500);
+}
+
+.locationButton:hover {
+  color: var(--clr-neutral-100);
+  box-shadow: 0px 0px 3px var(--clr-neutral-100);
+  cursor: pointer;
+}
+
+.navButtons.cat:hover {
+  box-shadow: 0px 0px 6px var(--clr-neutral-900);
+  border-radius: .5rem;
+  cursor: pointer;
 }
 
 .why {
@@ -350,4 +367,3 @@ footer section + section {
   }
 }
 
-#catPort
