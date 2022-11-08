@@ -392,7 +392,7 @@ footer section + section {
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 2700px){
+@media only screen and (min-width: 600px) and (max-width: 4000px){
   .foodSection {
     min-width: 1132px ;
     max-width: 1132px;
